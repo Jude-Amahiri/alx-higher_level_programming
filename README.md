@@ -31,7 +31,7 @@ scripting. The specific list of projects contained follows:
 
 ## Author :black_nib:
 
-* **Brennan D Baraban** <[bdbaraban](https://github.com/bdbaraban)>
+* Jude Amahiri
 
 ## Acknowledgements :pray:
 
