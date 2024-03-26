@@ -1,9 +1,10 @@
 #!/usr/bin/python3
+# Author -Nwabueze Franklin
+
 def magic_calculation(a, b, c):
-    """magic calculation solution part 2"""
+    """Match bytecode provided by Holberton School."""
     if a < b:
         return (c)
-    else:
-        if c > b:
-            return (a + b)
-    return (a * b - c)
+    if c > b:
+        return (a + b)
+    return (a*b - c)

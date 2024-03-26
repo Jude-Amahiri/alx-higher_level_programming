@@ -1,16 +1,9 @@
 #!/usr/bin/python3
-"""load python from json file string"""
+"""Defines a JSON file-reading function."""
 import json
 
 
 def load_from_json_file(filename):
-    """load py data structure from file string
-
-    Args:
-        filename: the file name
-
-    Returns:
-        the python data structure
-    """
-    with open(filename, 'r') as myfile:
-        return (json.load(myfile))
+    """Create a Python object from a JSON file."""
+    with open(filename) as f:
+        return json.load(f)

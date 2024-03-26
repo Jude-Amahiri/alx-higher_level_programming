@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 def number_keys(a_dictionary):
-    """return the number of keys
+    num = 0
+    list_keys = list(a_dictionary.keys())
 
-    Args:
-        a_dictionary: the dictionary
+    for i in list_keys:
+        num += 1
 
-    Returns:
-        the numbers of the key
-    """
-    return (len(a_dictionary))
+    return (num)

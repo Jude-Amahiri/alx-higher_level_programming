@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-"""Locking a class against props"""
+"""Defines a locked class."""
 
 
 class LockedClass:
-    """creating a locked class that
-    prevens creaion of another prop
+    """
+    Prevent the user from instantiating new LockedClass attributes
+    for anything but attributes called 'first_name'.
     """
 
     __slots__ = ["first_name"]

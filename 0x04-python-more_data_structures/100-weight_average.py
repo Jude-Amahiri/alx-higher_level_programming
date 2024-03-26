@@ -1,18 +1,13 @@
 #!/usr/bin/python3
 def weight_average(my_list=[]):
-    """print average of a list
+    if not my_list:
+        return 0
 
-    Args:
-        my_list: the list
+    num = 0
+    den = 0
 
-    Returns:
-        the average
-    """
-    new_list = []
-    count = 0
-    if len(my_list) == 0:
-        return (0)
-    for m in my_list:
-        new_list.append(m[0] * m[1])
-        count += m[1]
-    return (sum(new_list) / count)
+    for tup in my_list:
+        num += tup[0] * tup[1]
+        den += tup[1]
+
+    return (num / den)

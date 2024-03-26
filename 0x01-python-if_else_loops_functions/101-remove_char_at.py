@@ -1,9 +1,7 @@
 #!/usr/bin/python3
+# Author - Nwabueze Franklin
+
 def remove_char_at(str, n):
-    newstr = ''
-    for i in range(len(str)):
-        if i == n:
-            continue
-        else:
-            newstr = newstr + str[i]
-    return (newstr)
+    if n < 0:
+        return (str)
+    return (str[:n] + str[n+1:])

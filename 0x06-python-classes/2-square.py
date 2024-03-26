@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-"""The square module continue"""
+
+"""Define a class Square."""
 
 
 class Square:
-    """The class to create square."""
+    """Represent a square."""
 
     def __init__(self, size=0):
-        """set size to private instance variable
-
+        """Initialize a new Square.
         Args:
-            size (int): the size of the square
+            size (int): The size of the new square.
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")

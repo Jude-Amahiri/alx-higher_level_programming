@@ -1,16 +1,14 @@
 #!/usr/bin/python3
-"""overwrite the content of the byte"""
+"""Defines a file-writing function."""
 
 
 def write_file(filename="", text=""):
-    """write to file
-
+    """Write a string to a UTF8 text file.
     Args:
-        filename: the filename
-        text: the text
-
+        filename (str): The name of the file to write.
+        text (str): The text to write to the file.
     Returns:
-        return the number of byte written
+        The number of characters written.
     """
-    with open(filename, 'w', encoding="utf-8") as myfile:
-        return (myfile.write(text))
+    with open(filename, "w", encoding="utf-8") as f:
+        return f.write(text)
